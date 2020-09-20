@@ -1170,8 +1170,6 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="POWER" width="0" drill="0">
-</class>
 </classes>
 <designrules name="default">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
@@ -1590,7 +1588,7 @@ design rules under a new name.</description>
 </element>
 </elements>
 <signals>
-<signal name="GND" class="1">
+<signal name="GND">
 <contactref element="IC2" pad="13"/>
 <contactref element="C3" pad="1"/>
 <contactref element="C1" pad="1"/>
@@ -1609,11 +1607,7 @@ design rules under a new name.</description>
 <contactref element="USB1" pad="GND1"/>
 <contactref element="C10" pad="1"/>
 <contactref element="C9" pad="2"/>
-<contactref element="J2" pad="10"/>
-<contactref element="J2" pad="2"/>
-<wire x1="-109.22" y1="-130.81" x2="-114.3" y2="-130.81" width="0" layer="19" extent="1-1"/>
-<wire x1="-107.0746" y1="-121.92" x2="-109.22" y2="-130.81" width="0" layer="19" extent="1-1"/>
-<wire x1="-117.221" y1="-121.92" x2="-114.3" y2="-130.81" width="0" layer="19" extent="1-1"/>
+<wire x1="-107.0746" y1="-121.92" x2="-117.221" y2="-121.92" width="0" layer="19" extent="1-1"/>
 <wire x1="-104.5346" y1="-106.68" x2="-107.0746" y2="-121.92" width="0" layer="19" extent="1-1"/>
 <wire x1="-104.5346" y1="-99.06" x2="-104.5346" y2="-106.68" width="0" layer="19" extent="1-1"/>
 <wire x1="-104.5346" y1="-91.44" x2="-104.5346" y2="-99.06" width="0" layer="19" extent="1-1"/>
@@ -1647,8 +1641,6 @@ design rules under a new name.</description>
 <contactref element="F1" pad="2"/>
 <contactref element="C10" pad="2"/>
 <contactref element="C9" pad="1"/>
-<contactref element="J2" pad="4"/>
-<wire x1="-113.919" y1="-121.92" x2="-113.03" y2="-130.81" width="0" layer="19" extent="1-1"/>
 <wire x1="-108.8254" y1="-121.92" x2="-113.919" y2="-121.92" width="0" layer="19" extent="1-1"/>
 <wire x1="-102.6646" y1="-114.3" x2="-108.8254" y2="-121.92" width="0" layer="19" extent="1-1"/>
 <wire x1="-106.2854" y1="-106.68" x2="-102.6646" y2="-114.3" width="0" layer="19" extent="1-1"/>
@@ -1692,11 +1684,9 @@ design rules under a new name.</description>
 <signal name="CC2">
 <contactref element="USB1" pad="CC2"/>
 </signal>
-<signal name="RESET">
+<signal name="N$3">
 <contactref element="IC1" pad="30"/>
 <contactref element="U$2" pad="1"/>
-<contactref element="J2" pad="6"/>
-<wire x1="-106.68" y1="-34.671" x2="-111.76" y2="-130.81" width="0" layer="19" extent="1-1"/>
 <wire x1="-31.94" y1="0.89" x2="-106.68" y2="-34.671" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
@@ -1734,31 +1724,6 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="93"/>
 <contactref element="J2" pad="1"/>
 <wire x1="-30.44" y1="16.89" x2="-114.3" y2="-132.08" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="PF6_ADC6_TDO">
-<contactref element="IC1" pad="91"/>
-<contactref element="J2" pad="3"/>
-<wire x1="-29.44" y1="16.89" x2="-113.03" y2="-132.08" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="PF5_ADC5_TMS">
-<contactref element="IC1" pad="92"/>
-<contactref element="J2" pad="5"/>
-<wire x1="-29.94" y1="16.89" x2="-111.76" y2="-132.08" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="PG1_!RD">
-<contactref element="IC1" pad="52"/>
-<contactref element="J2" pad="8"/>
-<wire x1="-19.94" y1="3.39" x2="-110.49" y2="-130.81" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="PG0_!WR">
-<contactref element="IC1" pad="51"/>
-<contactref element="J2" pad="7"/>
-<wire x1="-19.94" y1="2.89" x2="-110.49" y2="-132.08" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="PF7_ADC7_TDI">
-<contactref element="IC1" pad="90"/>
-<contactref element="J2" pad="9"/>
-<wire x1="-28.94" y1="16.89" x2="-109.22" y2="-132.08" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

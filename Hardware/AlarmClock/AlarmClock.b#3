@@ -1122,45 +1122,58 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 </package3d>
 </packages3d>
 </library>
-<library name="JTAG_10pol_50mil-MSW193">
+<library name="52101-101-REV-A_v16" urn="urn:adsk.eagle:library:21899384">
+<description>Generated from &lt;b&gt;Testing&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
 <packages>
-<package name="SAMTEC_FTS-105-01-L-D">
-<wire x1="0.635" y1="0.5842" x2="0.635" y2="1.0668" width="0.1524" layer="21"/>
-<wire x1="-5.715" y1="-2.1082" x2="-5.715" y2="-2.3368" width="0.1524" layer="21"/>
-<wire x1="-5.715" y1="-2.3368" x2="0.635" y2="-2.3368" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-2.3368" x2="0.635" y2="-1.8542" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.0668" x2="-5.715" y2="1.0668" width="0.1524" layer="21"/>
-<wire x1="-5.715" y1="1.0668" x2="-5.715" y2="0.5842" width="0.1524" layer="21"/>
-<wire x1="-4.5974" y1="-3.4036" x2="-5.3594" y2="-3.4036" width="0.508" layer="21" curve="-180"/>
-<wire x1="-5.3594" y1="-3.4036" x2="-4.5974" y2="-3.4036" width="0.508" layer="21" curve="-180"/>
-<wire x1="-8.001" y1="-2.3368" x2="2.921" y2="-2.3368" width="0.1524" layer="51"/>
-<wire x1="2.921" y1="1.0668" x2="-8.001" y2="1.0668" width="0.1524" layer="51"/>
-<wire x1="-4.5974" y1="-3.4036" x2="-5.3594" y2="-3.4036" width="0.508" layer="51" curve="-180"/>
-<wire x1="-5.3594" y1="-3.4036" x2="-4.5974" y2="-3.4036" width="0.508" layer="51" curve="-180"/>
-<pad name="1" x="-5.08" y="-1.27" drill="0.6604" shape="square"/>
-<pad name="2" x="-5.08" y="0" drill="0.6604"/>
-<pad name="3" x="-3.81" y="-1.27" drill="0.6604"/>
-<pad name="4" x="-3.81" y="0" drill="0.6604"/>
-<pad name="5" x="-2.54" y="-1.27" drill="0.6604"/>
-<pad name="6" x="-2.54" y="0" drill="0.6604"/>
-<pad name="7" x="-1.27" y="-1.27" drill="0.6604"/>
-<pad name="8" x="-1.27" y="0" drill="0.6604"/>
-<pad name="9" x="0" y="-1.27" drill="0.6604"/>
-<pad name="10" x="0" y="0" drill="0.6604"/>
-<text x="-6.858" y="-2.032" size="1.27" layer="21" ratio="6" rot="SR0">1</text>
-<text x="-6.858" y="-0.508" size="1.27" layer="21" ratio="6" rot="SR0">2</text>
-<text x="1.27" y="-1.778" size="1.27" layer="21" ratio="6" rot="SR0">9</text>
-<text x="0.762" y="-0.508" size="1.27" layer="21" ratio="6" rot="SR0">10</text>
-<text x="-6.858" y="-2.032" size="1.27" layer="51" ratio="6" rot="SR0">1</text>
-<text x="-6.858" y="-0.508" size="1.27" layer="51" ratio="6" rot="SR0">2</text>
-<text x="1.27" y="-1.778" size="1.27" layer="51" ratio="6" rot="SR0">9</text>
-<text x="0.762" y="-0.508" size="1.27" layer="51" ratio="6" rot="SR0">10</text>
-<text x="-7.2644" y="1.8542" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="-8.0264" y="-5.3848" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
-<wire x1="-8.001" y1="1.0668" x2="-8.001" y2="-2.3368" width="0.1524" layer="51"/>
-<wire x1="2.921" y1="-2.3368" x2="2.921" y2="1.0668" width="0.1524" layer="51"/>
+<package name="TI-TIVA_3220-10-0300-00" urn="urn:adsk.eagle:footprint:15662228/1" library_version="1">
+<description>&lt;b&gt;SMD SHROUDED HEADER&lt;/b&gt;&lt;p&gt;
+10 PIN, 0.05" PITCH&lt;p&gt;
+Source: CNC Tech</description>
+<wire x1="-6.325" y1="2.55" x2="6.325" y2="2.55" width="0.0508" layer="51"/>
+<wire x1="6.325" y1="2.55" x2="6.325" y2="-2.55" width="0.0508" layer="51"/>
+<wire x1="6.325" y1="-2.55" x2="1.25" y2="-2.55" width="0.0508" layer="51"/>
+<wire x1="1.25" y1="-2.55" x2="-1.25" y2="-2.55" width="0.0508" layer="51"/>
+<wire x1="-1.25" y1="-2.55" x2="-6.325" y2="-2.55" width="0.0508" layer="51"/>
+<wire x1="-6.325" y1="-2.55" x2="-6.325" y2="2.55" width="0.0508" layer="51"/>
+<wire x1="-5.625" y1="1.85" x2="5.625" y2="1.85" width="0.0508" layer="51"/>
+<wire x1="5.625" y1="1.85" x2="5.625" y2="-1.85" width="0.0508" layer="51"/>
+<wire x1="5.625" y1="-1.85" x2="1.25" y2="-1.85" width="0.0508" layer="51"/>
+<wire x1="1.25" y1="-1.85" x2="1.25" y2="-2.55" width="0.0508" layer="51"/>
+<wire x1="-1.25" y1="-2.55" x2="-1.25" y2="-1.85" width="0.0508" layer="51"/>
+<wire x1="-1.25" y1="-1.85" x2="-5.625" y2="-1.85" width="0.0508" layer="51"/>
+<wire x1="-5.625" y1="-1.85" x2="-5.625" y2="1.85" width="0.0508" layer="51"/>
+<wire x1="-6.6" y1="2.8" x2="-3.2" y2="2.8" width="0.2032" layer="21"/>
+<wire x1="3.2" y1="2.8" x2="6.6" y2="2.8" width="0.2032" layer="21"/>
+<wire x1="6.6" y1="2.8" x2="6.6" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="6.6" y1="-2.8" x2="3.2" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="-3.2" y1="-2.8" x2="-6.6" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="-6.6" y1="-2.8" x2="-6.6" y2="2.8" width="0.2032" layer="21"/>
+<rectangle x1="-3.9" y1="-3.2" x2="-3.1" y2="-2.4" layer="21"/>
+<smd name="1" x="-2.54" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="2" x="-2.54" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="3" x="-1.27" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="4" x="-1.27" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="5" x="0" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="6" x="0" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="7" x="1.27" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="8" x="1.27" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="9" x="2.54" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="10" x="2.54" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<text x="-6.604" y="3.429" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.175" y="-0.381" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
+<packages3d>
+<package3d name="TI-TIVA_3220-10-0300-00" urn="urn:adsk.eagle:package:15662285/2" type="model" library_version="1">
+<description>&lt;b&gt;SMD SHROUDED HEADER&lt;/b&gt;&lt;p&gt;
+10 PIN, 0.05" PITCH&lt;p&gt;
+Source: CNC Tech</description>
+<packageinstances>
+<packageinstance name="TI-TIVA_3220-10-0300-00"/>
+</packageinstances>
+</package3d>
+</packages3d>
 </library>
 </libraries>
 <attributes>
@@ -1169,8 +1182,6 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
-</class>
-<class number="1" name="POWER" width="0" drill="0">
 </class>
 </classes>
 <designrules name="default">
@@ -1578,19 +1589,13 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-118.11" y="-120.396" size="0.889" layer="25" ratio="11"/>
 <attribute name="VALUE" x="-116.84" y="-124.206" size="0.635" layer="27" ratio="10"/>
 </element>
-<element name="J2" library="JTAG_10pol_50mil-MSW193" package="SAMTEC_FTS-105-01-L-D" value="FTS-105-01-L-D" x="-109.22" y="-130.81" smashed="yes">
-<attribute name="DESCRIPTION" value="CONN HEADER, 1.27MM, THRU HOLE, 10WAY" x="-109.22" y="-130.81" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="FTS-105-01-L-D" x="-109.22" y="-130.81" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-116.4844" y="-128.9558" size="2.0828" layer="25" ratio="10" rot="SR0"/>
-<attribute name="OCFARNELL" value="1667728" x="-109.22" y="-130.81" size="1.778" layer="27" display="off"/>
-<attribute name="OCNEWARK" value="11P4652" x="-109.22" y="-130.81" size="1.778" layer="27" display="off"/>
-<attribute name="PACKAGE" value="HEADER, 1.27MM, THRU HOLE, 10WAY" x="-109.22" y="-130.81" size="1.778" layer="27" display="off"/>
-<attribute name="SUPPLIER" value="Samtec" x="-109.22" y="-130.81" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-117.2464" y="-136.1948" size="2.0828" layer="27" ratio="10" rot="SR0"/>
+<element name="P1" library="52101-101-REV-A_v16" library_urn="urn:adsk.eagle:library:21899384" package="TI-TIVA_3220-10-0300-00" package3d_urn="urn:adsk.eagle:package:15662285/2" value="TI-TIVA_JTAG-3220-10-0300-00" x="-110.49" y="-130.81" smashed="yes">
+<attribute name="NAME" x="-117.094" y="-127.381" size="1.016" layer="25" ratio="18"/>
+<attribute name="VALUE" x="-113.665" y="-131.191" size="0.8128" layer="27" ratio="10"/>
 </element>
 </elements>
 <signals>
-<signal name="GND" class="1">
+<signal name="GND">
 <contactref element="IC2" pad="13"/>
 <contactref element="C3" pad="1"/>
 <contactref element="C1" pad="1"/>
@@ -1609,11 +1614,7 @@ design rules under a new name.</description>
 <contactref element="USB1" pad="GND1"/>
 <contactref element="C10" pad="1"/>
 <contactref element="C9" pad="2"/>
-<contactref element="J2" pad="10"/>
-<contactref element="J2" pad="2"/>
-<wire x1="-109.22" y1="-130.81" x2="-114.3" y2="-130.81" width="0" layer="19" extent="1-1"/>
-<wire x1="-107.0746" y1="-121.92" x2="-109.22" y2="-130.81" width="0" layer="19" extent="1-1"/>
-<wire x1="-117.221" y1="-121.92" x2="-114.3" y2="-130.81" width="0" layer="19" extent="1-1"/>
+<wire x1="-107.0746" y1="-121.92" x2="-117.221" y2="-121.92" width="0" layer="19" extent="1-1"/>
 <wire x1="-104.5346" y1="-106.68" x2="-107.0746" y2="-121.92" width="0" layer="19" extent="1-1"/>
 <wire x1="-104.5346" y1="-99.06" x2="-104.5346" y2="-106.68" width="0" layer="19" extent="1-1"/>
 <wire x1="-104.5346" y1="-91.44" x2="-104.5346" y2="-99.06" width="0" layer="19" extent="1-1"/>
@@ -1647,8 +1648,6 @@ design rules under a new name.</description>
 <contactref element="F1" pad="2"/>
 <contactref element="C10" pad="2"/>
 <contactref element="C9" pad="1"/>
-<contactref element="J2" pad="4"/>
-<wire x1="-113.919" y1="-121.92" x2="-113.03" y2="-130.81" width="0" layer="19" extent="1-1"/>
 <wire x1="-108.8254" y1="-121.92" x2="-113.919" y2="-121.92" width="0" layer="19" extent="1-1"/>
 <wire x1="-102.6646" y1="-114.3" x2="-108.8254" y2="-121.92" width="0" layer="19" extent="1-1"/>
 <wire x1="-106.2854" y1="-106.68" x2="-102.6646" y2="-114.3" width="0" layer="19" extent="1-1"/>
@@ -1692,11 +1691,9 @@ design rules under a new name.</description>
 <signal name="CC2">
 <contactref element="USB1" pad="CC2"/>
 </signal>
-<signal name="RESET">
+<signal name="N$3">
 <contactref element="IC1" pad="30"/>
 <contactref element="U$2" pad="1"/>
-<contactref element="J2" pad="6"/>
-<wire x1="-106.68" y1="-34.671" x2="-111.76" y2="-130.81" width="0" layer="19" extent="1-1"/>
 <wire x1="-31.94" y1="0.89" x2="-106.68" y2="-34.671" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
@@ -1729,36 +1726,6 @@ design rules under a new name.</description>
 <contactref element="F1" pad="1"/>
 <wire x1="-96.255" y1="-31.0388" x2="-105.6154" y2="-114.3" width="0" layer="19" extent="1-1"/>
 <wire x1="-93.215" y1="-31.0388" x2="-96.255" y2="-31.0388" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="PF4_ADC4_TCK">
-<contactref element="IC1" pad="93"/>
-<contactref element="J2" pad="1"/>
-<wire x1="-30.44" y1="16.89" x2="-114.3" y2="-132.08" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="PF6_ADC6_TDO">
-<contactref element="IC1" pad="91"/>
-<contactref element="J2" pad="3"/>
-<wire x1="-29.44" y1="16.89" x2="-113.03" y2="-132.08" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="PF5_ADC5_TMS">
-<contactref element="IC1" pad="92"/>
-<contactref element="J2" pad="5"/>
-<wire x1="-29.94" y1="16.89" x2="-111.76" y2="-132.08" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="PG1_!RD">
-<contactref element="IC1" pad="52"/>
-<contactref element="J2" pad="8"/>
-<wire x1="-19.94" y1="3.39" x2="-110.49" y2="-130.81" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="PG0_!WR">
-<contactref element="IC1" pad="51"/>
-<contactref element="J2" pad="7"/>
-<wire x1="-19.94" y1="2.89" x2="-110.49" y2="-132.08" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="PF7_ADC7_TDI">
-<contactref element="IC1" pad="90"/>
-<contactref element="J2" pad="9"/>
-<wire x1="-28.94" y1="16.89" x2="-109.22" y2="-132.08" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
