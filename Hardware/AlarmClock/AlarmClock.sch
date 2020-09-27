@@ -4475,9 +4475,9 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.3048" drill="0.6096">
 </class>
-<class number="1" name="POWER" width="0" drill="0">
+<class number="1" name="POWER" width="0.6096" drill="0.6096">
 </class>
 </classes>
 <parts>
@@ -4672,7 +4672,7 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <label x="213.36" y="312.42" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VCC" class="0">
+<net name="VCC" class="1">
 <segment>
 <pinref part="U$2" gate="G$1" pin="2"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>

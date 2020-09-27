@@ -4477,6 +4477,8 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="POWER" width="0" drill="0">
+</class>
 </classes>
 <parts>
 <part name="IC1" library="atmel-2005" deviceset="ATMEGA*" device="AU" technology="2560-16"/>
@@ -4742,7 +4744,7 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <junction x="55.88" y="228.6"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="GND2" gate="1" pin="GND"/>

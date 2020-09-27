@@ -1168,9 +1168,9 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.3048" drill="0.6096">
 </class>
-<class number="1" name="POWER" width="0" drill="0">
+<class number="1" name="POWER" width="0.6096" drill="0.6096">
 </class>
 </classes>
 <designrules name="default">
@@ -1631,7 +1631,7 @@ design rules under a new name.</description>
 <wire x1="-19.94" y1="8.39" x2="-24.44" y2="16.89" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.94" y1="0.89" x2="-35.94" y2="9.89" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="VCC">
+<signal name="VCC" class="1">
 <contactref element="IC2" pad="2"/>
 <contactref element="IC3" pad="8"/>
 <contactref element="U$1" pad="1"/>
@@ -1648,7 +1648,7 @@ design rules under a new name.</description>
 <contactref element="C10" pad="2"/>
 <contactref element="C9" pad="1"/>
 <contactref element="J2" pad="4"/>
-<wire x1="-113.919" y1="-121.92" x2="-113.03" y2="-130.81" width="0" layer="19" extent="1-1"/>
+<wire x1="-113.03" y1="-130.81" x2="-113.919" y2="-121.92" width="0" layer="19" extent="1-1"/>
 <wire x1="-108.8254" y1="-121.92" x2="-113.919" y2="-121.92" width="0" layer="19" extent="1-1"/>
 <wire x1="-102.6646" y1="-114.3" x2="-108.8254" y2="-121.92" width="0" layer="19" extent="1-1"/>
 <wire x1="-106.2854" y1="-106.68" x2="-102.6646" y2="-114.3" width="0" layer="19" extent="1-1"/>
@@ -1696,7 +1696,7 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="30"/>
 <contactref element="U$2" pad="1"/>
 <contactref element="J2" pad="6"/>
-<wire x1="-106.68" y1="-34.671" x2="-111.76" y2="-130.81" width="0" layer="19" extent="1-1"/>
+<wire x1="-111.76" y1="-130.81" x2="-106.68" y2="-34.671" width="0" layer="19" extent="1-1"/>
 <wire x1="-31.94" y1="0.89" x2="-106.68" y2="-34.671" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
