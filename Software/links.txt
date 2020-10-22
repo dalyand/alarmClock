@@ -1,0 +1,9 @@
+http://arduino-projects4u.com/ldc-character/
+
+https://werner.rothschopf.net/202009_arduino_liquid_crystal_wire_en.htm
+
+http://surenoo.tech/download/01_SLC/Controller/AIP31068.pdf
+
+http://surenoo.tech/download/01_SLC/1602/SLC1602O.pdf?spm=a2g0o.detail.1000023.29.3ccd40d1M99uXj&file=SLC1602O.pdf
+
+https://gitlab.com/tandembyte/LCD_I2C/-/tree/master

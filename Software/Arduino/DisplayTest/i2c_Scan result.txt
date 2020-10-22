@@ -1,0 +1,7 @@
+12:29:51.671 -> Scanning...
+12:29:51.671 -> I2C device found at address 0x03  !
+12:29:51.705 -> I2C device found at address 0x3E  !
+12:29:51.740 -> I2C device found at address 0x60  !
+12:29:51.775 -> I2C device found at address 0x70  !
+12:29:51.809 -> done
+12:29:51.809 -> 
