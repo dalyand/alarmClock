@@ -14,8 +14,7 @@
 #define DS3231_I2C_ADDR             0b11010000  // DS3231 (RTC) 208
 #define AT24C32_I2C_ADDR            0b10101110  // AT24C32 (32k Memory) 174
 
-
-#define DATA_LENGTH     6
+#define RTC_POLL_TIME_MS            1000
 
 void ERROR (void){
     lcdClear();
@@ -34,7 +33,10 @@ void ERROR (void){
 int main(void)
 {
     //Variablen
-    bcdTime_t timeBuffer;
+    bcdTime_t rtcTime;
+    uint64_t timeNow=0;
+    uint64_t nextRtcUpdate=0;
+    uint8_t rtcTimeChanged=0;
     
 
 
@@ -67,20 +69,29 @@ int main(void)
     while(1)
     {
         //Eingabe-------------------------------------------------------------------------
-        if (rtcReadTime(&timeBuffer))
+        timeNow = getSystemTimeMs();
+        if (timeNow > nextRtcUpdate)
         {
-            ERROR();
+            if (rtcReadTime(&rtcTime))
+            {
+                ERROR();
+            }
+            rtcTimeChanged= 1;
+            nextRtcUpdate = timeNow + RTC_POLL_TIME_MS;
         }
         
 
         //Verarbeitung--------------------------------------------------------------------
         
         //Ausgabe------------------------------------------------------------------
-        lcdWriteZeit(0,timeBuffer);
-        //ledWrite(((timeBuffer.secondBcd&0x0f)+((timeBuffer.secondBcd>>4)&0x0f)*10));
-        ledWrite(0xffff<<(16-((((timeBuffer.secondBcd&0x0f)+((timeBuffer.secondBcd>>4)&0x0f)*10))*(uint16_t)16/59)));
         
-        wait5msTick(20);
+        if (rtcTimeChanged)
+        {
+            rtcTimeChanged=0;
+            
+        	lcdWriteZeit(0,rtcTime);
+            ledWrite(0xffff<<(16-((((rtcTime.secondBcd&0x0f)+((rtcTime.secondBcd>>4)&0x0f)*10))*(uint16_t)16/59)));
+        }
     }
 }
 
