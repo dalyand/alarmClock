@@ -13,6 +13,8 @@
 #include <Wire.h>
 #include <DFRobot_LCD.h>
 
+
+
 uint8_t r,g,b;
 int t=0;
 uint32_t sNeu=0;
@@ -58,6 +60,20 @@ void setup() {
   lcd.print("Mo 06:50");
 }
 
+void loop() {
+  sNeu=millis()/1000;
+  if(sOld != sNeu){
+    printTime(4,0,sNeu);
+    sOld=sNeu;
+  }
+  r=(abs(sin(3.14*t/180)))*255;//get R,G,B value
+  g=(abs(sin(3.14*(t+60)/180)))*255;
+  b=(abs(sin(3.14*(t+120)/180)))*255;
+  t=t+1;
+  lcd.setRGB(r,g,b);//Set R,G,B Value
+  delay(20);
+}
+
 void printTime(uint8_t x, uint8_t y, uint64_t seconds){
   char zeit[9];
   uint8_t h,m,s;
@@ -75,22 +91,4 @@ void printTime(uint8_t x, uint8_t y, uint64_t seconds){
   zeit[8] = 0;
   lcd.setCursor(x,y);
   lcd.print(zeit);
-}
-
-
-
-
-
-void loop() {
-  sNeu=millis()/1000;
-  if(sOld != sNeu){
-    printTime(4,0,sNeu);
-    sOld=sNeu;
-  }
-  r=(abs(sin(3.14*t/180)))*255;//get R,G,B value
-  g=(abs(sin(3.14*(t+60)/180)))*255;
-  b=(abs(sin(3.14*(t+120)/180)))*255;
-  t=t+1;
-  lcd.setRGB(r,g,b);//Set R,G,B Value
-  delay(20);
 }
