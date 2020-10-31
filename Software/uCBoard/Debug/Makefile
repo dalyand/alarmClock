@@ -37,6 +37,7 @@ SUBDIRS :=
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
+../AT24C32.c \
 ../i2c_master.c \
 ../main.c \
 ../rtc_DS3231_i2c.c \
@@ -50,24 +51,28 @@ ASM_SRCS +=
 
 
 OBJS +=  \
+AT24C32.o \
 i2c_master.o \
 main.o \
 rtc_DS3231_i2c.o \
 ucBoardDriver.o
 
 OBJS_AS_ARGS +=  \
+AT24C32.o \
 i2c_master.o \
 main.o \
 rtc_DS3231_i2c.o \
 ucBoardDriver.o
 
 C_DEPS +=  \
+AT24C32.d \
 i2c_master.d \
 main.d \
 rtc_DS3231_i2c.d \
 ucBoardDriver.d
 
 C_DEPS_AS_ARGS +=  \
+AT24C32.d \
 i2c_master.d \
 main.d \
 rtc_DS3231_i2c.d \
@@ -87,6 +92,13 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
+./AT24C32.o: .././AT24C32.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : 5.4.0
+	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\include"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -mrelax -g2 -Wall -mmcu=atmega2560 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\gcc\dev\atmega2560" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
 ./i2c_master.o: .././i2c_master.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0

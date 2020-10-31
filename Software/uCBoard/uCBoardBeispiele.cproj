@@ -139,6 +139,12 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AT24C32.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="AT24C32.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="i2c_master.c">
       <SubType>compile</SubType>
     </Compile>
