@@ -4,6 +4,8 @@
 
 AT24C32.c
 
+DFRobot_LCD.c
+
 i2c_master.c
 
 main.c
