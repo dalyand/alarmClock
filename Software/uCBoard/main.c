@@ -217,6 +217,9 @@ int main(void)
         //Verarbeitung--------------------------------------------------------------------
         
         //Ausgabe------------------------------------------------------------------
+//         i2cLcdSetCursor(0,0);
+//         i2cLcdWriteZahl(getSystemTimeMs(),8,3);
+        
         if (getSystemTimeMs() > nextFarbshow)
         {
             farbshow();

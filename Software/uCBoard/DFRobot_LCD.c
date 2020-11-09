@@ -202,6 +202,63 @@ uint8_t i2cLcdWriteText(char* text)
     return 0;
 }
 
+void i2cLcdWriteZahl(uint64_t zahl, uint8_t vorKommaStellen, uint8_t nachKommaStellen)
+{
+    uint8_t komma=0;
+    char numberBuffer[20];//20stellen dezimal
+    char send_buffer[22];//64Bit: 20Stellen dezimal + Komma + Zerotermination
+    uint8_t i, posSend, posRead, stellenTotal;
+    uint64_t val=zahl;
+    
+    stellenTotal=vorKommaStellen+nachKommaStellen;
+    if(stellenTotal>20){
+        i2cLcdWriteText("----------------");
+        return;
+    }
+    if (nachKommaStellen)
+    {
+        komma=1;
+    }
+
+    // Umwandlung in die einzelnen Stellen-Zahlen 1er, 10er, 100er, ...
+    //  zahl = 12345;
+    //  s_vk = 2;
+    //  s_nk = 0;
+    //  komma = 0;
+    for(i=0;i<20;i++){
+        numberBuffer[19-i] = (val % 10)+48;//19=einer, 18=zehner, 17=hunderter....
+        val = val / 10;
+    }
+    //Vorkommastellen kopieren
+    posSend=0;
+    posRead=20-stellenTotal;
+    for (i=0;i<vorKommaStellen;i++)
+    {
+        send_buffer[posSend] = numberBuffer[posRead];
+        posSend++;
+        posRead++;
+    }
+    //komma
+    if(komma){
+        send_buffer[posSend]='.';
+        posSend++;
+    }
+    //Nachkommastellen kopieren
+    for(i=0;i<nachKommaStellen;i++){
+        send_buffer[posSend] = numberBuffer[posRead];
+        posSend++;
+        posRead++;
+    }
+    
+    send_buffer[posSend]=0;
+    // Vorangehende Nullen löschen
+    i = 0;
+    while ( (send_buffer[i] == 48) && (i < vorKommaStellen-1) )
+    { send_buffer[i++] = 32;
+    }
+    i2cLcdWriteText(send_buffer);
+}
+
 uint8_t i2cLcdWriteChar(uint8_t value)
 {
 
@@ -309,22 +366,21 @@ void i2cLcdBegin(uint8_t cols, uint8_t lines, uint8_t dotsize)
 
 uint8_t i2cLcdSend(uint8_t *data, uint8_t len)
 {
-    
-    
     if (i2c_start(_lcdAddr))
     {
         return 1;
     }
-    //_delay_ms(5);
+    _delay_ms(1);
     for(int i=0; i<len; i++) {
         if (i2c_write(data[i]))
         {
             return 1;
         }
         
-		//_delay_ms(5);
+		_delay_ms(1);
     }
     i2c_stop();
+    _delay_ms(1);
     return 0;
 }
 
